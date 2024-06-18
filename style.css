@@ -1,0 +1,320 @@
+/*det her noget som påvirker alle elementer*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  
+  
+  .knap {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    padding: 14px 60px;
+    background-color: #555555;
+    color: white;
+    
+  }
+  /*background-repeat no repeat betyder billede ikke vil gentage sig*/
+  .hero-section {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .nyhed {
+    margin: 100px;
+    text-align: center;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    color: white;
+  }
+  
+  .navbar a {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0 10px;
+    transition: all 0.5s ease;
+  }
+  
+  .navbar a:hover {
+    color: #D1CCC9;
+  }
+  
+  #hamburger {
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+  }
+  
+  .ikoner {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .ikoner a {
+    margin: 0 10px 0 25px;
+  }
+  
+  /*navbar a betyder den rammer alle a elementerne*/ 
+  @media (max-width: 1280px) {
+    header {
+      padding: 14px 2%;
+      transition: 0.2s;
+    }
+    .navbar a {
+      padding: 5px 0;
+      margin: 0 20px;
+    }
+  }
+  /* all 0.5 ease med til ændre navbaren på 0.5 sekund når hjemmesiden er 1090px width*/
+  @media (max-width: 1090px) {
+    #hamburger {
+      display: block;
+    }
+    .navbar {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 270px;
+      height: 29vh;
+      background: #D1CCC9;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border-radius: 10px;
+      transition: all 0.5s ease;
+      
+    }
+    .navbar a {
+      display: block;
+      margin: 12px 0;
+      padding: 0 25px;
+      transition: all 0.5s ease;
+    }
+    .navbar a:hover {
+      color: white;
+      transform: translateY(5px);
+    }
+    .navbar a.active {
+      color: white;
+    }
+    .navbar.open {
+      right: 2px;
+    }
+  
+  }
+
+  
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all 0.5s ease;
+    background-image: url(images/IMG_0553\ 2.jpg);
+  }
+  
+  /* Shop produkter stilarter */
+  .shopProducts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .produkt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+    margin: 3%;
+  }
+  
+  .beskrivelse{
+    color: #ACA497;
+    font-family: sans-serif;
+  }
+  .pris{
+    font-family: Source Serif Pro;
+    color: #515151;
+  }
+  
+  video {
+    display: block;
+    margin: auto;
+    bottom: auto;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 50px;
+  }
+  
+  .logo i {
+    font-size: 28px;
+    margin-right: 3px;
+  }
+  
+  .logo span {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .ikoner {
+    color: white;
+  }
+  
+  .Kurv {
+    padding: 14px 40px;
+  }
+  
+  .shop-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Produktsektion stilarter */
+  .product-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .product-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: 16px;
+  }
+  
+  .product-column-height {
+    height: 500px;
+  }
+  
+  .product-img {
+    width: 100%;
+  }
+  
+  .product-img-carousel {
+    max-width: 50px;
+  }
+  .undertitel{
+    color: #ACA497;
+  }
+  
+  .product-title-variant {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .number-of-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .number-of-input-container {
+    display: flex;
+  }
+  
+  #antal {
+    padding: 10px 30px;
+    border-radius: 0;
+    border: 1px solid #ACA497;
+    margin-right: 5px;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #ACA497;
+    padding: 0 20px;
+    color: white;
+    border: none;
+  }
+  
+  .product-info-text {
+    max-width: 600px;
+    font-family: sans-serif;
+  }
+  
+  h3{
+    font-family: Source Serif Pro;
+    color: #515151;
+  }
+  h4{
+    text-align: center;
+  }
+  
+  .number-of-input-container input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  /*margin er med til skabe afstand mellem elementerne. text-align bestemmer hvor tekst skal stå på skærmen.*/
+  /* padding hjælper med skabe luft i mellem elementer*/
+  .overskrift {
+    margin-top: 200px;
+    width: 450px;
+    text-align: center;
+    color: white;
+    font-family: Source Serif Pro;
+  
+  }
+  
+  /* display hjælpe med placering af produket og justify-content hjælper med styere pladsen omkring elementerne*/
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .video-container {
+    width: 100vw;
+  }
+  
+  .hero-video {
+    width: 100%;
+  }
+  
+  .hero-text {
+    position: absolute;
+  }
+  
+  .shop {
+    text-align: center;
+    font-size: larger;
+  }
+.Shop{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+}  
+.text{
+  color: white;
+}
